@@ -7,8 +7,8 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 import joblib
 
-#diabetesDF=Diabetes_KP_FRAME270041.drop(['DIABETES_ML_UNIQUE_ROW_ID','id','Drug','frame'], axis=1)
-diabetesDF=Diabetes_KP_FRAME270041.drop(['DIABETES_ML_UNIQUE_ROW_ID','id','Drug','frame', 'MANUFACTURER_MAKING_PAYMENT_NAME','DRUG'], axis=1)
+#diabetesDF=Diabetes_KP_FRAME163341.drop(['DIABETES_ML_UNIQUE_ROW_ID','id','Drug','frame'], axis=1)
+diabetesDF=Diabetes_KP_FRAME163341.drop(['DIABETES_ML_UNIQUE_ROW_ID','id','Drug','frame', 'MANUFACTURER_MAKING_PAYMENT_NAME','DRUG'], axis=1)
 
 diabetesDF = diabetesDF.sample(frac=1).reset_index(drop=True)
 
