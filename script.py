@@ -60,7 +60,7 @@ features['importance'] = coeff
 features.sort_values(by=['importance'], ascending=True, inplace=True)
 features['positive'] = features['importance'] > 0
 
-path=kunal+'/diabetes_model/diabetesModel.pkl'
+path=kunal+'/version/345b3b2b-9de8-43c0-b077-e79e69e17025/diabetes_model/diabetesModel.pkl'
 dataPath=kunal+'/diabetes_model/dftrain.csv'
 dfTrain.to_csv(dataPath);
 ## save the model
